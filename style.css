@@ -104,6 +104,9 @@ footer{
     padding: 20px;
   }
 
+.container{
+  height: 400px;
+}
   .local{
     padding: 20px;
     width: 90%
