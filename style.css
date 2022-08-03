@@ -1,5 +1,6 @@
 html{
   height: 100%;
+
 }
 
 
@@ -14,6 +15,24 @@ body{
   margin: 10px;
   width: auto;
   height: auto;
+
+}
+
+.edinburgh{
+  background-image: linear-gradient(to bottom right,#920596,#ffbb6a);
+
+}
+
+.hangzhou{
+  background-image: linear-gradient(to bottom right,#9e0007,#FF7177);
+}
+
+.seoul{
+  background-image: linear-gradient(to bottom right,#0f0071,#ffffff);
+}
+
+.willemstad{
+  background-image: linear-gradient(to bottom right,#0f0071,#efff06);
 }
 
 a{
