@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="countdown.js"></script>
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style.css" type="text/css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,32 +13,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-  <meta name="description" content="A dashboard of Clocks displaying World Time Zones for cities around the world, including London, Delhi, Seoul, Singapore and Hangzhou. Created by Not Bad Industrial">
-  <meta name="keywords" content="clocks, time, worldwide, world, clock, timezone, timezones, not bad industrial, GMT, Willemstad, Curacao, rio de janeiro, edinburgh, rome, riyadh, istanbul, delhi, hangzhou, singapore, seoul, world, international, dashboard, ">
-  <script src="clocks.js"></script>
-  <title>
-    Clock - Not Bad Industrial
-  </title>
-  <meta name"viewport" content="width=device-width, intial-scale=1">
 </head>
-<body onload="updateClocks()">
+<body>
   <div class='navcentre'>
     <a href='index.html' class='link'>Edinburgh</a>
     <a href='hangzhou.html' class='link'>Hangzhou</a>
     <a href='willemstad.html' class='link'>Willemstad</a>
     <a href='seoul.html' class='link'>Seoul</a>
-    <a href='qian.html' class='link'>倩</a>
   </div>
-  <div class="container">
-    <div class="center">
-      <span class="clock" data-timezone="Asia/Shanghai"></span>
-      <p class='local'>HANGZHOU 杭州</p>
-    </div>
+  <center>
+    <div class="container">
+      <div class="center">
+    <h2 id="countdown" class="clock" style="font-size: 85px;"></h2>
+    <p class="local" style="font-size: 36px;">Time until Qian is back!</p>
   </div>
-
+</div>
+  </center>
 
 </body>
-
-<!--<footer><img src="NBNDWider.png" alt="Not Bad Industrial Logo" class="logo"></footer>-->
-
 </html>
