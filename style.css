@@ -1,39 +1,21 @@
 html{
-  height: 100%;
 
 }
 
 
 body{
-  background-image: linear-gradient(to bottom right,#920596,#ffbb6a);
+  /*background-image: linear-gradient(to bottom right,#6b6b6b,#262626); #000114 0D0D0D;*/
+  background-color: #000114;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100%;
   /*background-color: rgb(250,250,250);*/
-  color: rgb(50,50,50);
+  /*color: rgb(211,233,239);*/
+  color: rgb(110,110,110);
   margin: 10px;
-  width: auto;
-  height: auto;
 
 }
 
-.edinburgh{
-  background-image: linear-gradient(to bottom right,#920596,#ffbb6a);
-
-}
-
-.hangzhou{
-  background-image: linear-gradient(to bottom right,#9e0007,#FF7177);
-}
-
-.seoul{
-  background-image: linear-gradient(to bottom right,#0f0071,#ffffff);
-}
-
-.willemstad{
-  background-image: linear-gradient(to bottom right,#0f0071,#efff06);
-}
 
 a{
   font-family: 'Source Code Pro', monospace;
@@ -41,7 +23,8 @@ a{
 
 .link{
   text-decoration: none;
-  color: rgb(50,50,50);
+  color: rgb(110,110,110);
+  /*color: #B3C7CC;*/
   padding-left: 40px;
   font-size: 18px;
 }
@@ -55,62 +38,51 @@ a{
 
 h1{
   font-family: 'Montserrat', sans-serif;
-  font-size: 55px;
+  font-size: 75px;
   width: 100%;
   padding-bottom: 0px;
   padding-top: 10px;
 }
 
 p{
-  padding: 5px;
+  padding: 10px;
   font-family: 'Source Code Pro', monospace;
 }
 
 .clock {
-  font-size: 120px;
-  font-family: 'Source Code Pro', monospace;
-  padding: 30px;
-  margin: auto;
+  font-size: 150px;
+  font-family: 'Roboto Condensed';
 
 }
 
+.divcen {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
 
 .local{
   font-family: 'Source Code Pro', monospace;
   font-size: 30px;
-  padding: 1px;
-  margin-top: 5px;
+  /*padding: 1px;
+  margin-top: 5px;*/
 
 }
 
 .container {
-  height: 600px;
-  position: relative;
-  justify-content: center;
+  height: 100vh;
   text-align: center;
-
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-items: center;
 }
 
-.center {
-  /*background-image: linear-gradient(to bottom right,rgb(230,230,230),rgb(250,250,250));
-  background-color: rgb(245,245,245);*/
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 75%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border: solid;
-  border-width: 3.8px;
-  border-bottom-width: 2px;
-  border-right-width:2px;
-  box-shadow: 5px 7px 5px 5px;
-
-}
 
 .logo{
-  height: 60px;
+  height: 50px;
   width: auto;
   padding: 0px;
 }
@@ -126,6 +98,7 @@ footer{
   font-family: Helvetica;
 }
 
+/*
 @media only screen and (max-width: 1080px) {
   body{
     height: 100%;
@@ -157,3 +130,4 @@ footer{
     position: static;
   }
 }
+*/
