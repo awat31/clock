@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 4, 2022 14:00:00").getTime();
+var countDownDate = new Date("Oct 12, 2028 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -32,8 +32,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="countdown"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("countdown").innerHTML = days + " Days\n" + hours + " Hours\n"
+  + minutes + " Minutes\n" + seconds + " Seconds\n";
 
 // If time is passed 10/12/2022 18:00:00, (within 24 hours) then only print hours
   if (distance < 86400000) {
