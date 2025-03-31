@@ -33,28 +33,28 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="countdown"
   document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  + minutes + "m " + seconds + "s";
 
-// If time is passed 10/12/2022 18:00:00, (within 24 hours) then only print hours
+// If time is passed within 24 hours then only print hours
   if (distance < 86400000) {
 
-    document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s";
   }
 
-// If time is passed 11/12/2022 17:00:00, (within 1 hour) then only print minutes
+// If time is within 1 hour then only print minutes
   if (distance < 3600000) {
 
-    document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
+    document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s";
   }
 
-// If time is passed 11/12/2022 17:59:00, (within 1 minute) then only print seconds
+// If time is within 1 minute then only print seconds
   if (distance < 60000) {
-    document.getElementById("countdown").innerHTML = seconds + "s ";
+    document.getElementById("countdown").innerHTML = seconds + "s";
   }
 
 // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "QIAN IS BACK!!";
+    document.getElementById("countdown").innerHTML = "Time is up.";
   }
 }, 1000);
